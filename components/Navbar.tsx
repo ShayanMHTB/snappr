@@ -1,11 +1,17 @@
-import React, { useEffect, useState } from "react";
+import {
+  useEffect,
+  useState
+} from "react";
+
 import Link from "next/link";
+
 import {
   AiOutlineMenu,
   AiOutlineClose
 } from "react-icons/ai";
 
 import { Raleway } from "@next/font/google";
+
 const raleway = Raleway({});
 
 export default function Navbar() {
@@ -57,11 +63,9 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Mobile Button */}
         <div onClick={handleNav} className="block sm:hidden z-10">
           { nav ? <AiOutlineClose size={20} style={{color: `${textColor}`}} /> : <AiOutlineMenu size={20} style={{color: `${textColor}`}} /> }
         </div>
-        {/* Mobile Menu */}
         <div className={ nav ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center w-full h-screen bg-black text-center ease-in duration-300" : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex items-center justify-center w-full h-screen bg-black text-center ease-in duration-300" }>
           <ul>
             <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
