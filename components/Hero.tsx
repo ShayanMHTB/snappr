@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Raleway } from "@next/font/google";
 
 const raleway = Raleway({});
