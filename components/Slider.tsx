@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Image from "next/image";
 
-import { SliderData } from "./SliderData";
+import { SliderData } from "../data/SliderData";
 
 import {
   FaArrowCircleLeft,
@@ -15,10 +15,13 @@ export default function Slider(slides: any) {
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
-  }
-
+  };
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (slides.length <= 0) {
+    return null;
   }
 
   return (
@@ -47,6 +50,7 @@ export default function Slider(slides: any) {
                   width="1440"
                   height="600"
                   style={{objectFit: "cover"}}
+                  className="rounded-2xl"
                 />
               )}
               <FaArrowCircleRight 
