@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Snappr  
 
-## Getting Started
+**Snappr Photography Website**  
 
-First, run the development server:
+<br />
 
+## Description  
+
+This is a Photographer's Portfolio Website to showcase his/her works as well as communicaiton 
+information for potential customers to contact him/her.  
+
+In order to create this website following technologies were used:  
+1. [Next JS](https://nextjs.org/)
+2. [Tailwind CSS](https://tailwindcss.com/)
+
+<br />
+
+## Badges  
+
+
+
+<br />
+
+## Visuals  
+
+Put in a few screnshots, or just of the main hero section
+
+<br />
+
+## Installation  
+
+Clone this repository by
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/ShayanMHTB/snappr.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+move to the created folder
+```bash
+cd snappr
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+install project's dependencies
+```bash
+npm run install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<br />
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Usage  
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+After dependencies are installed and if termainal is not throwing any errors, simply run
+```bash
+# Development mode
+npm run dev
 
-## Learn More
+# Build project
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Start application
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+In order to lint your code
+```bash
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<br />
 
-## Deploy on Vercel
+## Support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For support simply contact me or open an issue in this repository, otherwise
+for specific issues in `Next JS` or `Tailwind CSS` visit their according websites.  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<br />
+
+## Contribution  
+
+Buy me a coffee
+
+<br />
+
+## Authors & Acknowledgment  
+
+The author of this repository: 
+- [ShayanMHTB](https://shayanmhtb.com)
+
+The images are all licence free from Unsplash.
+In case you're using this website's layout, remember to use your own images.
+
+<br />
+
+## License  
+
+[MIT LICENSE](https://github.com/ShayanMHTB/snappr/blob/main/LICENSE)  
