@@ -5,6 +5,8 @@ import {
 
 import Link from "next/link";
 
+import { NavbarItems } from "../data/navbar";
+
 import {
   AiOutlineMenu,
   AiOutlineClose
@@ -46,21 +48,18 @@ export default function Navbar() {
     <div style={{backgroundColor: `${color}`}} className={`fixed left-0 top-0 w-full z-10 ease-in duration-300 ${raleway.className}`}>
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href='/' >
-          <h1 style={{color: `${textColor}`}} className="font-bold text-4xl">Captur</h1>
+          <h1 style={{color: `${textColor}`}} className="font-bold text-4xl">Snappr</h1>
         </Link>
         <ul style={{color: `${textColor}`}} className="hidden sm:flex">
-          <li className="p-4">
-            <Link href={'/'}>Home</Link>
-          </li>
-          <li className="p-4">
-            <Link href={'/#gallery'}>Gallery</Link>
-          </li>
-          <li className="p-4">
-            <Link href={'/work'}>Work</Link>
-          </li>
-          <li className="p-4">
-            <Link href={'/contact'}>Contact</Link>
-          </li>
+          {NavbarItems.map((navbarItem) => {
+            return (
+              <li key={navbarItem.id} className="p-4 hover:bg-white/20 rounded-lg">
+                <Link href={navbarItem.link} className="p-4">
+                  {navbarItem.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         <div onClick={handleNav} className="block sm:hidden z-10">
@@ -68,18 +67,15 @@ export default function Navbar() {
         </div>
         <div className={ nav ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center w-full h-screen bg-black text-center ease-in duration-300" : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex items-center justify-center w-full h-screen bg-black text-center ease-in duration-300" }>
           <ul>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-              <Link href={'/'}>Home</Link>
-            </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-              <Link href={'/#gallery'}>Gallery</Link>
-            </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-              <Link href={'/#work'}>Work</Link>
-            </li>
-            <li onClick={handleNav} className="p-4 text-4xl hover:text-gray-500">
-              <Link href={'/#contact'}>Contact</Link>
-            </li>
+            {NavbarItems.map((navbarItem) => {
+              return (
+                <li onClick={handleNav} key={navbarItem.id} className="p-4 text-4xl hover:text-gray-500">
+                  <Link href={navbarItem.link}>
+                    {navbarItem.title}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>
