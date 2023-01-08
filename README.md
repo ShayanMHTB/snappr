@@ -21,6 +21,10 @@ Here are a few Images of the website.
 
 ![Gallery Page](./public/galleryPage.png)
 
+Here is a Lighthouse analysis of the website. There's always some room for improvements!  
+
+![Lighthouse Analysis](./public/lighthouse.png)
+
 ## Installation  
 
 Clone this repository by
