@@ -13,7 +13,7 @@ export default function Portfolio() {
             height={451}
           />
         </div>
-        <div className="w-full h-full">
+        <div className="flex items-center w-full h-full">
           <Image
             src={"https://images.unsplash.com/photo-1533029030467-904d7bbd602b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG9uZyUyMGtvbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"}
             alt="/"
@@ -22,7 +22,7 @@ export default function Portfolio() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="w-full h-full">
+        <div className="flex items-center w-full h-full">
           <Image
             src={"https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWlhbWl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"}
             alt="/"
@@ -31,7 +31,7 @@ export default function Portfolio() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="w-full h-full">
+        <div className="flex items-center w-full h-full">
           <Image
             src={"https://images.unsplash.com/photo-1533029030467-904d7bbd602b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG9uZyUyMGtvbmd8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"}
             alt="/"
@@ -40,7 +40,7 @@ export default function Portfolio() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className="w-full h-full">
+        <div className="flex items-center w-full h-full">
           <Image
             src={"https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWlhbWl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"}
             alt="/"
