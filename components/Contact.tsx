@@ -1,7 +1,7 @@
 export default function Contact () {
   return (
     <div className="max-w-[1240px] m-auto p-4 h-screen/2">
-      <h1 className="text-2xl font-bold text-center p-4">Let&apo;s Work Together</h1>
+      <h1 className="text-2xl font-bold text-center p-4">Let&apos;s Work Together</h1>
       <form className="max-w-[600px] m-auto">
         <div className="grid grid-cols-2 gap-2">
           <input className="border shadow-lg p-3 rounded-lg" type="text" placeholder="Name" />
